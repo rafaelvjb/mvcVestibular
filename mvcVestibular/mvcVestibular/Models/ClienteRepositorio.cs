@@ -35,7 +35,8 @@ namespace mvcVestibular.Models
         }
 
         public void Insert(Cliente cliente)
-        {
+        { 
+            //se cliente já existe nao cria
             if (!clientes.Exists(c => c.Id == cliente.Id))
                 clientes.Add(cliente);
             else
@@ -46,6 +47,15 @@ namespace mvcVestibular.Models
         {
             clientes.FirstOrDefault(cli => cli.Id == clienteUpdate.Id).Nome = clienteUpdate.Nome;
             clientes.FirstOrDefault(cli => cli.Id == clienteUpdate.Id).Idade = clienteUpdate.Idade;
+        }
+
+        public void Delete(Cliente cliente)
+        {
+            //se cliente existe deleta
+            if (clientes.Exists(c => c.Id == cliente.Id))
+                clientes.Remove(cliente);
+            else
+                throw new Exception("Cliente nao existe");
         }
     }
 }

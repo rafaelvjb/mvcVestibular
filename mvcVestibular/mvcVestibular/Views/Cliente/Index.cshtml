@@ -5,6 +5,11 @@
 
 <h2>Listagem de Clientes</h2>
 
+@if (TempData["Mensagem"] != null)
+{
+    <p><strong>@TempData["Mensagem"]</strong></p>
+}
+
 <table>
     <tr>
         <th>ID</th>

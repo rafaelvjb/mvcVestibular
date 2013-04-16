@@ -11,5 +11,9 @@ namespace mvcVestibular.Models
         public string Nome { get; set; }
         public int Idade { get; set; }
 
+        public override bool Equals(object obj)
+        {
+            return this.Id == ((Cliente)obj).Id;
+        }
     }
 }
