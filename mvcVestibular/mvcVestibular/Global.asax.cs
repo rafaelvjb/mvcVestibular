@@ -1,4 +1,5 @@
-﻿using System;
+﻿using mvcVestibular.Models;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Data.Entity.Infrastructure;
@@ -26,7 +27,7 @@ namespace mvcVestibular
             routes.MapRoute(
                 "Default", // Route name
                 "{controller}/{action}/{id}", // URL with parameters
-                new { controller = "Exemplo", action = "Index", id = UrlParameter.Optional } // Parameter defaults
+                new { controller = "Cliente", action = "Index", id = UrlParameter.Optional } // Parameter defaults
             );
 
         }
@@ -40,6 +41,8 @@ namespace mvcVestibular
 
             RegisterGlobalFilters(GlobalFilters.Filters);
             RegisterRoutes(RouteTable.Routes);
+
+            Session["repositorioCliente"] = RepositorioFactory.InstanciarRepositorio();
         }
     }
 }

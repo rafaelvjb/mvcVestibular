@@ -1,0 +1,21 @@
+﻿@model mvcVestibular.Models.Cliente
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Listagem de Clientes</h2>
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Nome</th>
+        <th>Idade</th>
+    </tr>
+    <tr>
+        <td>@Html.DisplayFor(f=>f.Id)</td>
+        <td>@Html.DisplayFor(f=>f.Nome)</td>
+        <td>@Html.DisplayFor(f=>f.Idade)</td>
+    </tr>
+</table>
+
