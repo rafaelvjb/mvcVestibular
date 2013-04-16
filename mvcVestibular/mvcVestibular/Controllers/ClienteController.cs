@@ -62,7 +62,7 @@ namespace mvcVestibular.Controllers
             return View(cli);
         }
 
-        [HttpPost]
+        [HttpPost] //[HttpPost, ActionName="Delete"] //
         public ActionResult Delete(Cliente cliente)
         {
             clienteRepositorio.Delete(cliente);
