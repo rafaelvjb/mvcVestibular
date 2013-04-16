@@ -24,19 +24,28 @@ namespace mvcVestibular.Models
 
         }
 
-
-        public void Insert(Cliente cliente){
-            if (!clientes.Exists(c => c.Id == cliente.Id))
-                clientes.Add(cliente);
-            else
-                throw new Exception("Cliente ja existe");
-        }
-
         public IList<Cliente> GetAll()
         {
             return clientes;
         }
 
+        public Cliente GetDataById(int id)
+        {
+            return clientes.FirstOrDefault(data => data.Id == id);
+        }
+
+        public void Insert(Cliente cliente)
+        {
+            if (!clientes.Exists(c => c.Id == cliente.Id))
+                clientes.Add(cliente);
+            else
+                throw new Exception("Cliente ja existe");
+        }
         
+        public void Update(Cliente clienteUpdate)
+        {
+            clientes.FirstOrDefault(cli => cli.Id == clienteUpdate.Id).Nome = clienteUpdate.Nome;
+            clientes.FirstOrDefault(cli => cli.Id == clienteUpdate.Id).Idade = clienteUpdate.Idade;
+        }
     }
 }

@@ -37,5 +37,33 @@ namespace mvcVestibular.Controllers
             
             return View("Index",clientes);
         }
+
+
+        public ActionResult Update(int id)
+        {
+            var cli = clienteRepositorio.GetDataById(id);
+
+            return View(cli);
+        }
+
+        [HttpPost]
+        public ActionResult Update(Cliente cliente)
+        {
+            clienteRepositorio.Update(cliente);
+
+            var clientes = clienteRepositorio.GetAll();
+
+            return View("Index", clientes);
+        }
+
+
+
+
+
+
+
+
+
+
     }
 }
