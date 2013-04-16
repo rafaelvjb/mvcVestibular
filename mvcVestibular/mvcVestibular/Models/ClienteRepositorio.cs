@@ -26,7 +26,7 @@ namespace mvcVestibular.Models
 
 
         public void Insert(Cliente cliente){
-            if (clientes.Exists(c => c.Id == cliente.Id))
+            if (!clientes.Exists(c => c.Id == cliente.Id))
                 clientes.Add(cliente);
             else
                 throw new Exception("Cliente ja existe");

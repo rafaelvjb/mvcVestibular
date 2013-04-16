@@ -1,5 +1,4 @@
-﻿@model mvcVestibular.Models.Cliente
-
+﻿@model List<mvcVestibular.Models.Cliente>
 @{
     ViewBag.Title = "Index";
 }
@@ -12,10 +11,13 @@
         <th>Nome</th>
         <th>Idade</th>
     </tr>
-    <tr>
-        <td>@Html.DisplayFor(f=>f.Id)</td>
-        <td>@Html.DisplayFor(f=>f.Nome)</td>
-        <td>@Html.DisplayFor(f=>f.Idade)</td>
-    </tr>
+    @foreach (var cli in Model)
+    {
+        <tr>
+            <td>@Html.DisplayFor(f=> cli.Id)</td>
+            <td>@Html.DisplayFor(f=> cli.Nome)</td>
+            <td>@Html.DisplayFor(f=> cli.Idade)</td>
+        </tr>   
+    }
 </table>
 
