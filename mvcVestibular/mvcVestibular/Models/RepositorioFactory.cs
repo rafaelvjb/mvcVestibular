@@ -9,10 +9,10 @@ namespace mvcVestibular.Models
     {
         public static ClienteRepositorio InstanciarRepositorio()
         {
-            if (HttpContext.Current.Session["repositorioCliente"] == null)
+            if (HttpContext.Current.Application["repositorioCliente"] == null)
                 return new ClienteRepositorio();
-            
-            return (ClienteRepositorio)HttpContext.Current.Session["repositorioCliente"];
+
+            return (ClienteRepositorio)HttpContext.Current.Application["repositorioCliente"];
         }
     }
 }

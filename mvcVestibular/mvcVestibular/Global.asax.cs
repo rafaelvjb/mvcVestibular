@@ -42,7 +42,7 @@ namespace mvcVestibular
             RegisterGlobalFilters(GlobalFilters.Filters);
             RegisterRoutes(RouteTable.Routes);
 
-            Session["repositorioCliente"] = RepositorioFactory.InstanciarRepositorio();
+            Application["repositorioCliente"] = RepositorioFactory.InstanciarRepositorio();
         }
     }
 }

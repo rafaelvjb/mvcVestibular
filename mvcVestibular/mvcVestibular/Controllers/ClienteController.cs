@@ -14,7 +14,7 @@ namespace mvcVestibular.Controllers
 
         public ActionResult Index()
         {
-            var clientes = RepositorioFactory.InstanciarRepositorio().GetAll();
+            var clientes = RepositorioFactory.InstanciarRepositorio().GetAll()[0];
             return View(clientes);
         }
 
