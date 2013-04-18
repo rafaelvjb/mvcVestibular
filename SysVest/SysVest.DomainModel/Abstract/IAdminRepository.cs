@@ -20,7 +20,5 @@ namespace SysVest.DomainModel.Abstract
         Admin GetAdminById(int id);
 
         IList<Admin> GetAll();
-
-        
     }
 }
