@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SysVest.DomainModel", "SysVest.DomainModel\SysVest.DomainModel.csproj", "{023807C7-C353-4C82-96B6-0E8668C6A3DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SysVest.Test", "SysVest.Test\SysVest.Test.csproj", "{FB423795-1927-4C41-A605-19B2DBE81640}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SysVest.WebUI", "SysVest.WebUI\SysVest.WebUI.csproj", "{60C5C836-7B62-4BFB-B272-5BABAC5A86D6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{023807C7-C353-4C82-96B6-0E8668C6A3DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{023807C7-C353-4C82-96B6-0E8668C6A3DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{023807C7-C353-4C82-96B6-0E8668C6A3DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{023807C7-C353-4C82-96B6-0E8668C6A3DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB423795-1927-4C41-A605-19B2DBE81640}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB423795-1927-4C41-A605-19B2DBE81640}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB423795-1927-4C41-A605-19B2DBE81640}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB423795-1927-4C41-A605-19B2DBE81640}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60C5C836-7B62-4BFB-B272-5BABAC5A86D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60C5C836-7B62-4BFB-B272-5BABAC5A86D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60C5C836-7B62-4BFB-B272-5BABAC5A86D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60C5C836-7B62-4BFB-B272-5BABAC5A86D6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
