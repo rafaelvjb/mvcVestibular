@@ -50,7 +50,14 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="Entities\AdminTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SysVest.DomainModel\SysVest.DomainModel.csproj">
+      <Project>{023807c7-c353-4c82-96b6-0e8668c6a3dc}</Project>
+      <Name>SysVest.DomainModel</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

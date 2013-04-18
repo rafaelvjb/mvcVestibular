@@ -1,5 +1,7 @@
+C:\Fontes\CaseStudy\SysVest\SysVest.Test\obj\Debug\SysVest.Test.csprojResolveAssemblyReference.cache
 C:\Fontes\CaseStudy\SysVest\SysVest.Test\bin\Debug\SysVest.Test.dll
 C:\Fontes\CaseStudy\SysVest\SysVest.Test\bin\Debug\SysVest.Test.pdb
-C:\Fontes\CaseStudy\SysVest\SysVest.Test\obj\Debug\SysVest.Test.csprojResolveAssemblyReference.cache
+C:\Fontes\CaseStudy\SysVest\SysVest.Test\bin\Debug\SysVest.DomainModel.dll
+C:\Fontes\CaseStudy\SysVest\SysVest.Test\bin\Debug\SysVest.DomainModel.pdb
 C:\Fontes\CaseStudy\SysVest\SysVest.Test\obj\Debug\SysVest.Test.dll
 C:\Fontes\CaseStudy\SysVest\SysVest.Test\obj\Debug\SysVest.Test.pdb

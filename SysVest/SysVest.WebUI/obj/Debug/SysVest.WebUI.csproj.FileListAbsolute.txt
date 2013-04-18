@@ -9,6 +9,8 @@ C:\Fontes\CaseStudy\SysVest\SysVest.WebUI\bin\System.Web.Razor.dll
 C:\Fontes\CaseStudy\SysVest\SysVest.WebUI\bin\System.Web.WebPages.Deployment.dll
 C:\Fontes\CaseStudy\SysVest\SysVest.WebUI\bin\System.Web.WebPages.dll
 C:\Fontes\CaseStudy\SysVest\SysVest.WebUI\bin\System.Web.WebPages.Razor.dll
+C:\Fontes\CaseStudy\SysVest\SysVest.WebUI\bin\SysVest.DomainModel.dll
+C:\Fontes\CaseStudy\SysVest\SysVest.WebUI\bin\SysVest.DomainModel.pdb
 C:\Fontes\CaseStudy\SysVest\SysVest.WebUI\bin\EntityFramework.xml
 C:\Fontes\CaseStudy\SysVest\SysVest.WebUI\bin\System.Web.Helpers.xml
 C:\Fontes\CaseStudy\SysVest\SysVest.WebUI\bin\System.Web.Mvc.xml
