@@ -58,6 +58,23 @@ namespace SysVest.Test.Entities
             Assert.AreEqual(adm1.Login, adm2.Login);
             Assert.AreEqual(adm1, adm2);
         }
+
+        [TestMethod]
+        public void Ensure_2_Admins_Equals_When_Same_Email()
+        {
+
+            adm2 = new Admin
+            {
+                Id = 2,
+                Email = "adm@devmedia.com.br",
+                NameTratament = "asaADM",
+                Login = "admin",
+                Password = "147852"
+            };
+
+            Assert.AreEqual(adm1.Login, adm2.Login);
+            Assert.AreEqual(adm1, adm2);
+        }
     
     
     

@@ -34,7 +34,7 @@ namespace SysVest.DomainModel.Entities
         public override bool Equals(object obj)
         {
             var candidateParam = (Candidate)obj;
-            return (this.Id == candidateParam.Id || this.CPF == candidateParam.CPF);
+            return (this.Id == candidateParam.Id || this.CPF == candidateParam.CPF || this.Email == candidateParam.Email);
         }
     }
 }
