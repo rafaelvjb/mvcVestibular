@@ -39,9 +39,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities\Admin.cs" />
     <Compile Include="Entities\Candidate.cs" />
-    <Compile Include="Entities\Curso.cs" />
-    <Compile Include="Entities\Vestibular.cs" />
+    <Compile Include="Entities\Course.cs" />
+    <Compile Include="Entities\Exam.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
