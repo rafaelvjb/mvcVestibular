@@ -10,7 +10,7 @@
     <fieldset>
         <legend>Cliente</legend>
 
-        @Html.HiddenFor(client => client.Id)
+        @*@Html.HiddenFor(client => client.Id)
 
         <div class="editor-label">
             @Html.LabelFor(client => client.Nome)
@@ -24,12 +24,18 @@
         </div>
         <div class="editor-field">
             @Html.EditorFor(client => client.Idade)
-        </div>
+        </div>*@
 
+        <p>@Html.ValidationSummary(true)</p>
+        @Html.EditorForModel()
+
+    </fieldset>
+    
+    
+    
         <p>
             <input type="submit" value="Save Update" />
         </p>
-    </fieldset>
 }
 
 <div>

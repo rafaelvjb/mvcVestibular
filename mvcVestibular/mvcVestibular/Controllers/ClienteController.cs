@@ -29,17 +29,26 @@ namespace mvcVestibular.Controllers
         [HttpPost]
         public ActionResult Insert(Cliente cliente)
         {
-            var lastClientId = clienteRepositorio.GetAll().OrderByDescending(cli => cli.Id).FirstOrDefault().Id;
-            cliente.Id = lastClientId + 1;
-            clienteRepositorio.Insert(cliente);
-            TempData["Mensagem"] = "Usuario incluido com sucesso";
-            var clientes = clienteRepositorio.GetAll();
-            return View("Index",clientes);
+            if (ModelState.IsValid)
+            {
+                var lastClientId = clienteRepositorio.GetAll().OrderByDescending(cli => cli.Id).FirstOrDefault().Id;
+                cliente.Id = lastClientId + 1;
+                clienteRepositorio.Insert(cliente);
+                TempData["Mensagem"] = "Usuario incluido com sucesso";
+                var clientes = clienteRepositorio.GetAll();
+                return View("Index", clientes);
+            }
+            else
+            {
+                return View();
+            }
+             
         }
 
 
         public ActionResult Update(int id)
         {
+            
             var cli = clienteRepositorio.GetDataById(id);
 
             return View(cli);
@@ -48,10 +57,17 @@ namespace mvcVestibular.Controllers
         [HttpPost]
         public ActionResult Update(Cliente cliente)
         {
-            clienteRepositorio.Update(cliente);
-            TempData["Mensagem"] = "Usuario atualizado com sucesso";
-            var clientes = clienteRepositorio.GetAll();
-            return View("Index", clientes);
+            if (ModelState.IsValid)
+            {
+                clienteRepositorio.Update(cliente);
+                TempData["Mensagem"] = "Usuario atualizado com sucesso";
+                var clientes = clienteRepositorio.GetAll();
+                return View("Index", clientes);
+            }
+            else
+            {
+                return View(cliente);
+            }
         }
 
 

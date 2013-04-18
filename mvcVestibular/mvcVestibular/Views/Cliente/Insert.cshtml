@@ -1,12 +1,12 @@
 ﻿@model mvcVestibular.Models.Cliente
-
 @{
     ViewBag.Title = "Insert";
 }
 
 <h2>Insert </h2>
-@using (@Html.BeginForm()){
-    <fieldset>
+@using (@Html.BeginForm())
+{
+@*<fieldset>
         <legend>Cliente</legend>
 
         <div class="editor-label">
@@ -23,10 +23,17 @@
             @Html.EditorFor(model => model.Idade)
         </div>
 
-        <p>
-            <input type="submit" value="Create" />
-        </p>
+    </fieldset>*@
+    
+    <fieldset>
+        <legend>Cliente</legend>
+        
+        <p>@Html.ValidationSummary(true)</p>
+        @Html.EditorForModel()
     </fieldset>
+    <p>
+        <input type="submit" value="Create" />
+    </p>
 }
 <div>
     @Html.ActionLink("Back to List", "Index")
