@@ -70,7 +70,7 @@ namespace SysVest.Test.Entities
                 BirthDate = DateTime.Now.AddDays(2),
                 Email = "cand@mail.com",
                 Name = "candidate2",
-                CPF = "123133312333"
+                CPF = "12312312333"
             };
 
             Assert.AreEqual(candidate1.Email, candidate2.Email);
