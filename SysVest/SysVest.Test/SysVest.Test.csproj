@@ -57,6 +57,8 @@
   <ItemGroup>
     <Compile Include="Entities\AdminTest.cs" />
     <Compile Include="Entities\CandidateTest.cs" />
+    <Compile Include="Entities\ExamTest.cs" />
+    <Compile Include="Entities\CourseTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

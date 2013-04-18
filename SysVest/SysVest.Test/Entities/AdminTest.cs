@@ -72,7 +72,7 @@ namespace SysVest.Test.Entities
                 Password = "147852"
             };
 
-            Assert.AreEqual(adm1.Login, adm2.Login);
+            Assert.AreEqual(adm1.Email, adm2.Email);
             Assert.AreEqual(adm1, adm2);
         }
     

@@ -26,7 +26,7 @@ namespace SysVest.Test.Entities
         }
 
         [TestMethod]
-        public void Ensure_2_Admins_Equals_When_Same_Id()
+        public void Ensure_2_Candidates_Equals_When_Same_Id()
         {
             candidate2 = new Candidate
             {
@@ -44,7 +44,7 @@ namespace SysVest.Test.Entities
 
 
         [TestMethod]
-        public void Ensure_2_Admins_Equals_When_Same_CPF()
+        public void Ensure_2_Candidates_Equals_When_Same_CPF()
         {
             candidate2 = new Candidate
             {
@@ -61,7 +61,7 @@ namespace SysVest.Test.Entities
         }
 
         [TestMethod]
-        public void Ensure_2_Admins_Equals_When_Same_Email()
+        public void Ensure_2_Candidates_Equals_When_Same_Email()
         {
             candidate2 = new Candidate
             {
